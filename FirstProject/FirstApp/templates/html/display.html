@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Info</title>
+</head>
+<body background="{% static 'images/cashew.jfif' %}">
+	<h2> Hi {{username}}</h2>
+	<table border="1">
+		<tr>
+			<thead>
+				<th>User Name</th>
+				<th>Roll No</th>
+				<th>Email Id</th>
+			</thead>
+		</tr>
+		<tr>
+			<tbody>
+				<td>{{username}}</td>
+				<td>{{rno}}</td>
+				<td>{{emailid}}</td>
+			</tbody>
+		</tr>
+	</table>
+
+</body>
+</html>
